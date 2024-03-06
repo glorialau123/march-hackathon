@@ -1,0 +1,36 @@
+.header {
+    display: flex;
+    justify-content: space-around;
+    border: 3px solid brown;
+
+    &__logo {
+        height: 6rem;
+        width: 6rem;
+    }
+
+    &__link {
+        text-decoration: none;
+        align-self: center;
+        color: #790404;
+    }
+
+    &__column {
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+    }
+
+    &__title {
+        align-self: center;
+        font-style: italic;
+        color: brown;
+        font-size:25px;       
+        text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);        
+        transform: perspective(400px) rotateX(25deg); 
+    }
+
+    &__cart-image {
+        height: 5rem;
+        width: 5rem;       
+    }
+}
