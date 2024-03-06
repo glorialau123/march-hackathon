@@ -1,0 +1,11 @@
+.footer {
+  background-color: rgb(195, 195, 195);
+  display: flex;
+  justify-content: space-between;
+  height: 7rem;
+  &__names,
+  &__data {
+    font-size: 1.5rem;
+    padding: 2rem;
+  }
+}
