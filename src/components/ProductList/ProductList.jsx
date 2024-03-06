@@ -9,7 +9,7 @@ function ProductList() {
 
   useEffect(() => {
     async function getProducts() {
-      const response = await axios.get("https://fakestoreapi.com/products");
+      const response = await axios.get("http://localhost:9080/shoppingcart");
       setProducts(response.data);
       console.log(response);
     }
