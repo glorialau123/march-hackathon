@@ -1,3 +1,20 @@
+# Project members: Gloria, Ligang, Travis, Trupti
+
+# Project Overview:
+This project was created for our in-class Hackathon (Mar 2024). The purpose of the hackathon is to learn more about React and develop a full-stack project. We used Create React App for front-end, and Express server for back-end. 
+
+# Project functionality:
+- Going to the "Home" page will retrieve our back-end json data to display all products.
+- Clicking the "add to cart" button for a selected product(s)- the selected product(s) will appear on the "Cart" page.
+- Clicking the different icons on the header will bring you to the "Home" page or "Cart" page.
+
+# Home Page Screenshot:
+![image](https://github.com/glorialau123/march-hackathon/assets/96962463/b2d329c4-315d-408a-82ba-f5ff5f86a80e)
+
+# Cart Page Screenshot:
+![image](https://github.com/glorialau123/march-hackathon/assets/96962463/028881c4-edc7-473b-ac11-3f29a7d2ff22)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
