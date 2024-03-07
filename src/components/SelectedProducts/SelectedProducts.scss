@@ -1,0 +1,11 @@
+.selectedProduct {
+  &__item {
+    width: 50%;
+  }
+  &__image {
+    width: 10rem;
+  }
+  &__container {
+    display: flex;
+  }
+}

@@ -1,22 +1,7 @@
-import { useEffect, useState } from "react";
 import "./ProductList.scss";
-import axios from "axios";
-import { useParams } from "react-router-dom";
 
-function ProductList() {
-  const [products, setProducts] = useState([]);
-  const params = useParams();
-
-  useEffect(() => {
-    async function getProducts() {
-      const response = await axios.get("http://localhost:9080/shoppingcart");
-      setProducts(response.data);
-      console.log(response);
-    }
-    getProducts();
-  }, []);
-
-  const showProducts = products.map((product) => {
+function ProductList(props) {
+  const showProducts = props.products.map((product) => {
     return (
       <div className="product__item" key={product.id}>
         <img src={product.image} alt="product image" className="product__image" />
@@ -33,9 +18,12 @@ function ProductList() {
     );
   });
 
-  const addProduct = async (selectedProduct) => {
-    console.log("button pressed for", selectedProduct);
-    params.setSelectedProduct = { selectedProduct };
+  const addProduct = async (clickedProduct) => {
+    console.log("button pressed for", clickedProduct);
+    props.setSelectedProduct((prevSelectedProduct) => [
+      ...prevSelectedProduct,
+      clickedProduct,
+    ]);
   };
 
   return <div className="product">{showProducts}</div>;

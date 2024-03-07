@@ -1,15 +1,25 @@
 import "./HomePage.scss";
 import ProductList from "../../components/ProductList/ProductList";
-import { useParams } from "react-router-dom";
+import axios from "axios";
+import { useEffect } from "react";
 
-function HomePage() {
-  const params = useParams();
+function HomePage(props) {
+  useEffect(() => {
+    async function getProducts() {
+      const response = await axios.get("http://localhost:9080/shoppingcart");
+      props.setProducts(response.data);
+      console.log(response.data);
+    }
+    getProducts();
+  }, []);
 
   return (
     <div className="home">
       <ProductList
-        selectedProduct={params.selectedProduct}
-        setSelectedProduct={params.setSelectedProduct}
+        selectedProduct={props.selectedProduct}
+        setSelectedProduct={props.setSelectedProduct}
+        products={props.products}
+        setProducts={props.setProducts}
       />
     </div>
   );

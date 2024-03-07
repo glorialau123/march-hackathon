@@ -7,7 +7,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useState } from "react";
 
 function App() {
-  const [selectedProduct, setSelectedProduct] = useState("");
+  const [selectedProduct, setSelectedProduct] = useState([]);
+  const [products, setProducts] = useState([]);
 
   return (
     <div className="App">
@@ -18,6 +19,8 @@ function App() {
             path="/"
             element={
               <HomePage
+                products={products}
+                setProducts={setProducts}
                 selectedProduct={selectedProduct}
                 setSelectedProduct={setSelectedProduct}
               />
@@ -27,6 +30,8 @@ function App() {
             path="/cart"
             element={
               <CartPage
+                products={products}
+                setProducts={setProducts}
                 selectedProduct={selectedProduct}
                 setSelectedProduct={setSelectedProduct}
               />

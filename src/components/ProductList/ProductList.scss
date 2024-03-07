@@ -30,12 +30,12 @@
     margin-right: 1rem;
     padding: 0.1rem;
     border: none;
-    background-color: red;
+    background-color: maroon;
     color: white;
     font-weight: bold;
     border-radius: 4px;
     &:hover {
-      background-color: maroon;
+      background-color: red;
     }
   }
   &__breakdown {
