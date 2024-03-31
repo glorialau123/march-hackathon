@@ -1,7 +1,5 @@
-# Project members: Gloria, Ligang, Travis, Trupti
-
-# Project Overview:
-This project was created for our in-class Hackathon (Mar 2024). The purpose of the hackathon is to learn more about React and develop a full-stack project. We used Create React App for front-end, and Express server for back-end. 
+# Project Overview: BrainStation Hackathon
+This project was created for our in-class Hackathon (Mar 2024). The purpose of the hackathon is to learn more about React and develop a full-stack project. We used Create React App for front-end, and Express server for back-end. Members: Gloria, Ligang, Travis, Trupti
 
 # Project functionality:
 - Going to the "Home" page will retrieve our back-end json data to display all products.
